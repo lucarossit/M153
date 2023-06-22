@@ -1,0 +1,101 @@
+ERROR:root:FEHLER:  Syntaxfehler bei »)«
+LINE 5:             );
+                    ^
+
+ERROR:root:FEHLER:  Syntaxfehler bei »)«
+LINE 5:             );
+                    ^
+
+ERROR:root:FEHLER:  Syntaxfehler bei »)«
+LINE 5:             )
+                    ^
+
+ERROR:root:FEHLER:  Relation »categories« existiert nicht
+
+ERROR:root:FEHLER:  Relation »categories« existiert nicht
+
+ERROR:root:FEHLER:  ungültige Eingabesyntax für Typ integer: »q«
+LINE 1: INSERT INTO team (name, category_id) VALUES ('bla', 'q')
+                                                            ^
+
+ERROR:root:FEHLER:  ungültige Eingabesyntax für Typ integer: »«
+LINE 1: INSERT INTO team (name, category_id) VALUES ('bla', '')
+                                                            ^
+
+ERROR:root:FEHLER:  ungültige Eingabesyntax für Typ integer: »«
+LINE 1: INSERT INTO team (name, category_id) VALUES ('bla', '')
+                                                            ^
+
+ERROR:root:FEHLER:  ungültige Eingabesyntax für Typ integer: »«
+LINE 1: INSERT INTO team (name, category_id) VALUES ('bla', '')
+                                                            ^
+
+ERROR:root:FEHLER:  ungültige Eingabesyntax für Typ integer: »«
+LINE 1: INSERT INTO team (name, category_id) VALUES ('bla', '')
+                                                            ^
+
+ERROR:root:FEHLER:  ungültige Eingabesyntax für Typ integer: »«
+LINE 1: INSERT INTO team (name, category_id) VALUES ('bla', '')
+                                                            ^
+
+ERROR:root:FEHLER:  ungültige Eingabesyntax für Typ integer: »«
+LINE 1: INSERT INTO team (name, category_id) VALUES ('bla', '')
+                                                            ^
+
+ERROR:root:FEHLER:  ungültige Eingabesyntax für Typ integer: »«
+LINE 1: INSERT INTO team (name, category_id) VALUES ('bla', '')
+                                                            ^
+
+ERROR:root:FEHLER:  ungültige Eingabesyntax für Typ integer: »«
+LINE 1: INSERT INTO team (name, category_id) VALUES ('bla', '')
+                                                            ^
+
+ERROR:root:FEHLER:  ungültige Eingabesyntax für Typ integer: »«
+LINE 1: INSERT INTO team (name, category_id) VALUES ('t', '')
+                                                          ^
+
+ERROR:root:FEHLER:  ungültige Eingabesyntax für Typ integer: »«
+LINE 1: INSERT INTO team (name, category_id) VALUES ('t', '')
+                                                          ^
+
+ERROR:root:FEHLER:  ungültige Eingabesyntax für Typ integer: »q«
+LINE 1: ...ond_team, first_score, second_score) VALUES ('1', 'q', '3', ...
+                                                             ^
+
+ERROR:root:FEHLER:  ungültige Eingabesyntax für Typ integer: »«
+LINE 1: ...ond_team, first_score, second_score) VALUES ('1', '', '', ''...
+                                                             ^
+
+ERROR:root:FEHLER:  ungültige Eingabesyntax für Typ integer: »q«
+LINE 1: ...ond_team, first_score, second_score) VALUES ('3', 'q', '3', ...
+                                                             ^
+
+ERROR:root:FEHLER:  Syntaxfehler bei »team_id«
+LINE 1: INSERT INTO player (first_name, last_name, agem team_id) VAL...
+                                                        ^
+
+ERROR:root:FEHLER:  Syntaxfehler bei »team_id«
+LINE 1: INSERT INTO player (first_name, last_name, agem team_id) VAL...
+                                                        ^
+
+ERROR:root:FEHLER:  Spalte »team_id« hat Typ integer, aber der Ausdruck hat Typ record[]
+LINE 1: ...me, age, team_id) VALUES ('Luca', 'Rossit', '24', ARRAY[(1, ...
+                                                             ^
+HINT:  Sie müssen den Ausdruck umschreiben oder eine Typumwandlung vornehmen.
+
+ERROR:root:FEHLER:  ungültige Eingabesyntax für Typ integer: »«
+LINE 1: ...ast_name = 'Bucher', age = '25', team_id = '3' WHERE id = ''
+                                                                     ^
+
+ERROR:root:FEHLER:  ungültige Eingabesyntax für Typ integer: »«
+LINE 1: ...last_name = 'dsgsd', age = '25', team_id = '3' WHERE id = ''
+                                                                     ^
+
+ERROR:root:FEHLER:  ungültige Eingabesyntax für Typ integer: »«
+LINE 1: ..., last_name = 'sdg', age = '25', team_id = '3' WHERE id = ''
+                                                                     ^
+
+ERROR:root:FEHLER:  Syntaxfehler bei »%«
+LINE 1: SELECT * FROM player WHERE first_name LIKE %s
+                                                   ^
+
