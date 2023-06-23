@@ -20,45 +20,45 @@ class AppGui():
         while choice != 'q':
             system('cls')
             print('What do you want to do:')
-            print('c        create table')
-            print('cc       create category')
-            print('t        create team')
-            print('g        create game')
-            print('p        create player')
-            print('ep       edit player')
-            print('d        delete player')
-            print('s        print standings')
-            print('pg       print games')
-            print('pp       print players')
-            print('sp       search players')
-            print('r        reset games')
-            print('q        quit')
+            print('1        create table')
+            print('2        create category')
+            print('3        create team')
+            print('4        create game')
+            print('5        create player')
+            print('6        edit player')
+            print('7        delete player')
+            print('8        print standings')
+            print('9        print games')
+            print('10       print players')
+            print('11       search players')
+            print('12       reset games')
+            print('q       quit')
 
             choice = input()
-            if choice == 'c':
+            if choice == '1':
                 DAO.create_tables()
-            elif choice == 'cc':
+            elif choice == '2':
                 DAO.create_category()
-            elif choice == 't':
+            elif choice == '3':
                 DAO.create_team()           
-            elif choice == 'g':
+            elif choice == '4':
                 DAO.create_game()
-            elif choice == 'p':
+            elif choice == '5':
                 DAO.create_player()
-            elif choice == 'ep':
+            elif choice == '6':
                 DAO.edit_player()
-            elif choice == 'd':
+            elif choice == '7':
                 DAO.delete_player()
-            elif choice == 's':
+            elif choice == '8':
                 DAO.print_standings()
-            elif choice == 'pg':
+            elif choice == '9':
                 DAO.print_games()
-            elif choice == 'pp':
+            elif choice == '10':
                 DAO.print_playersByTeam()
                 pause(True)
-            elif choice == 'sp':
+            elif choice == '11':
                 DAO.search_player()
-            elif choice == 'r':
+            elif choice == '12':
                 DAO.reset_games()
             elif choice == 'q':
                 print('Bye bye!')
