@@ -26,6 +26,7 @@ class AppGui():
             print('g        create game')
             print('p        create player')
             print('ep       edit player')
+            print('d        delete player')
             print('s        print standings')
             print('pg       print games')
             print('pp       print players')
@@ -46,6 +47,8 @@ class AppGui():
                 DAO.create_player()
             elif choice == 'ep':
                 DAO.edit_player()
+            elif choice == 'd':
+                DAO.delete_player()
             elif choice == 's':
                 DAO.print_standings()
             elif choice == 'pg':

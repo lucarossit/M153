@@ -99,3 +99,7 @@ ERROR:root:FEHLER:  Syntaxfehler bei »%«
 LINE 1: SELECT * FROM player WHERE first_name LIKE %s
                                                    ^
 
+ERROR:root:FEHLER:  Syntaxfehler bei »player«
+LINE 1: DELETE player WHERE id = '1'
+               ^
+

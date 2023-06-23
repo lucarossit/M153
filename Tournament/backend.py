@@ -398,3 +398,15 @@ class App(ConfigReader):
             logging.error(e)
             print(e)
         pause(True)
+
+    def delete_player(self):
+        print('\nChoose player to delete')
+        player = self.search_player()
+        sql = """DELETE FROM player WHERE id = %s"""
+        try:
+            self.cur.execute(sql, (player, ))
+            self.conn.commit()
+        except psycopg2.Error as e:
+            logging.error(e)
+            print(e)
+        pause(True)
