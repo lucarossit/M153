@@ -1,7 +1,7 @@
 import psycopg2
 from os import system
 import logging
-from backend import App
+from app import App
 from helper import pause
 
 class AppGui():
