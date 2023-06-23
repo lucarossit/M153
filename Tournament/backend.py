@@ -138,7 +138,8 @@ class App(ConfigReader):
         while(valid == False):
             print('Select second team\n')
             for team in teams:
-                print(str(team[0]) + "\t" + team[1])
+                if (str(team[0]) != team1):
+                    print(str(team[0]) + "\t" + team[1])
             team2 = input()
             for team in teams:
                 if (str(team[0]) == team2):
@@ -171,8 +172,6 @@ class App(ConfigReader):
     def give_points(self, team, points):
         oldPoints = self.get_points(team)
         newPoints = int(oldPoints) + int(points)
-        print(newPoints)
-        print(team)
         sql = """UPDATE team SET points = %s WHERE id = %s"""
         try:
             self.cur.execute(sql, (str(newPoints), team,))
@@ -204,7 +203,7 @@ class App(ConfigReader):
     
     def print_standings(self):
         category = self.get_categories()
-        sql = """SELECT name, points FROM team WHERE category_id = %s ORDER BY points"""
+        sql = """SELECT name, points FROM team WHERE category_id = %s ORDER BY points DESC"""
         try:
             self.cur.execute(sql, (category,))
             teams = self.cur.fetchall()
@@ -388,3 +387,14 @@ class App(ConfigReader):
             logging.error(e)
             print(e)
         return player
+    
+    def reset_games(self):
+        sql = """TRUNCATE game;
+            UPDATE team SET points = 0"""
+        try:
+            self.cur.execute(sql)
+            self.conn.commit()
+        except psycopg2.Error as e:
+            logging.error(e)
+            print(e)
+        pause(True)

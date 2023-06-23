@@ -30,6 +30,7 @@ class AppGui():
             print('pg       print games')
             print('pp       print players')
             print('sp       search players')
+            print('r        reset games')
             print('q        quit')
 
             choice = input()
@@ -54,6 +55,8 @@ class AppGui():
                 pause(True)
             elif choice == 'sp':
                 DAO.search_player()
+            elif choice == 'r':
+                DAO.reset_games()
             elif choice == 'q':
                 print('Bye bye!')
             else:
